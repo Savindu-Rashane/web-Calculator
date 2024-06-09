@@ -1,0 +1,61 @@
+body{
+    background-image: image-set(url(image.png));
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#cal{
+    font-family: 'arial','sans-serif';
+    background-color:rgba(37, 67, 85, 0.897);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);    
+    text-align: right;
+    border: none;
+    background-color: rgb(118, 154, 160);
+}
+#keys{
+    display: grid ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+    overflow: hidden;
+}
+button{
+    width: 100px;
+    height: 100px;
+    padding: auto;
+    border-radius: 60px;
+    border: none;
+    background-color:rgb(171, 173, 192);
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(140, 142, 160);
+}
+button:active{
+    background-color: rgb(99, 100, 112);
+}
+.operator-btn{
+    background-color: rgb(110, 145, 197);
+}
+.operator-btn:hover{
+    background-color: rgb(75, 131, 214);
+}
+.operator-btn:active{
+    background-color: rgb(56, 111, 192);
+}
+
